@@ -506,7 +506,13 @@ h2{
 .modal-body  .col-form-label {
 	line-height: 0.225rem;
 }
-
+.close {
+	position: absolute;
+	top: 15px;
+	right: 22px;
+	cursor: pointer !important;
+	z-index: 99999999;
+}
 
 @media all and (max-width: 767px){
 	.header-top-fixed {
