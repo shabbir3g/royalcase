@@ -108,7 +108,10 @@ get_header();
 							<div class="choose_slider_items">
 								<ul id="mySlider1">
 								
-								<?php $factory_sliders = get_field('factory_sliders'); 
+								
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/kh9-UBn3w54" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+								
+								<!--<?php $factory_sliders = get_field('factory_sliders'); 
 
 								if($factory_sliders): 
 
@@ -127,7 +130,7 @@ get_header();
 								endif;
 								
 								?>
-									
+									-->
 									
 								</ul>
 							</div>

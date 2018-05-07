@@ -81,12 +81,13 @@ h2{
 }
 .breadcrmb-section{
 	background: #404143;
-	height: 30px;
 	color: #fff;
 }
 .breadcrmb-section a{
 	color: #fff;
 	text-decoration:none;
+	padding: 5px 0;
+	display: inline-block;
 }
 .choose_slider{
 	overflow: hidden;
@@ -246,7 +247,7 @@ h2{
 
 .trigger-control-prev {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -261,6 +262,7 @@ h2{
 	opacity: 1;
 	z-index: 9999;
 	cursor: pointer;
+	left: 0;
 }
 .trigger-control-prev  i{
 	font-size: 50px;
@@ -268,7 +270,7 @@ h2{
 }
 .trigger-control-next {
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	right: 0;
 	display: -webkit-box;
 	display: -ms-flexbox;

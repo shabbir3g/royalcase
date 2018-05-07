@@ -101,9 +101,9 @@ get_header();
 					<div class="warehousing-sliderss col-md-5 col-lg-5">
 						
 							<div class="owl-carousel">
+								<iframe width="100%" height="315" src="https://www.youtube.com/embed/kh9-UBn3w54" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 							
-							
-							<?php $factory_sliders = get_field('factory_sliders'); 
+						<!--	<?php $factory_sliders = get_field('factory_sliders'); 
 
 								if($factory_sliders): 
 
@@ -119,7 +119,7 @@ get_header();
 								
 								?>
 							
-							  <div><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/carousel-image.png" alt="" /></a></div>
+							  <div><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/carousel-image.png" alt="" /></a></div> -->
 							 
 							</div>
 						
