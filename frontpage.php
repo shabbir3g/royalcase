@@ -17,7 +17,7 @@ get_header();
 
 	<!-- HERO
 		================================================== -->
-		<section class="section section-top section-full">
+		<section class="section section-top ">
 
 			<!-- Parallax -->
 			<div class="bg-parallaxs">
