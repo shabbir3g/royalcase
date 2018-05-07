@@ -371,17 +371,15 @@ get_header();
 					
 					while($services->have_posts()):  $services->the_post(); ?>
 					<div class="col-md-4 col-lg-4">
-						<a href="<?php the_permalink(); ?>" class="card border-0 mb-3">
-							<div class="card-img-top">
-								<?php the_post_thumbnail(' img-fluid'); ?>
-							</div>
-							<div class="card-body">
-								<h4 class="card-title"><?php the_title(); ?></h4>
-								<p class="card-text text-muted">
-									<?php echo wp_trim_words(get_the_content(), 35, false); ?>
-								</p>
-							</div>
-						</a>
+						<div class="card-img-top">
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(' img-fluid'); ?></a>
+						</div>
+						<div class="card-body">
+							<a href="<?php the_permalink(); ?>"><h4 class="card-title"><?php the_title(); ?></h4></a>
+							<p class="card-text text-muted">
+								<?php echo wp_trim_words(get_the_content(), 35, false); ?>
+							</p>
+						</div>
 					</div>
 					<?php endwhile; ?>
 					

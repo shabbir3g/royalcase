@@ -150,13 +150,13 @@ h2{
 	background: url('images/check.png');
 	background-size: 100% 100%;
 	display: block;
-	width: 36px;
+	width: 21px;
 	content: '';
-	height: 22px;
+	height: 17px;
 	background-repeat: no-repeat;
 	position: relative;
-	top: 20px;
-	right: 44px;
+	top: 14px;
+	right: 23px;
 }
 .check-list li{
 	line-height: 14px;
@@ -513,7 +513,9 @@ h2{
 	cursor: pointer !important;
 	z-index: 99999999;
 }
-
+.light-text{
+	color: #fff;
+}
 @media all and (max-width: 767px){
 	.header-top-fixed {
 		height: inherit;
