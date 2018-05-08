@@ -102,27 +102,20 @@ get_header();
 							
 						</div>
 					</div>
-					<div class="warehousing-sliderss col-md-12 col-lg-7">
-						<div class="choose_slider">
-
-							<div class="choose_slider_items">
-								<ul id="mySlider1">
+					<div class="warehousing-sliderss col-md-7 col-lg-7">
+						
+							<div class="owl-carousel">
 								
 								
-								<iframe width="100%" height="315" src="https://www.youtube.com/embed/kh9-UBn3w54" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								
-								<!--<?php $factory_sliders = get_field('factory_sliders'); 
+								<?php $factory_sliders_copy = get_field('factory_sliders_copy'); 
 
-								if($factory_sliders): 
+								if($factory_sliders_copy): 
 
-								foreach($factory_sliders as $slids){ ?>
+								foreach($factory_sliders_copy as $slids){ ?>
+									<?php echo $slids['videos']; ?>
 									
-									<li class="current_item">
-										<a href="#">
-											<img src="<?php echo $slids['url']; ?>" />
-										</a>
-									</li>
-									
+								
 									
 									<?php
 								}
@@ -130,14 +123,15 @@ get_header();
 								endif;
 								
 								?>
-									-->
-									
-								</ul>
+								
+								
+					
+							 
 							</div>
-						</div>
+						
 						<div class="direction-slider"> 
-							<div><a id="btn_prev1" href="#"><i class="fas fa-angle-left"></i></a></div>
-							<div><a id="btn_next1" href="#"><i class="fas fa-angle-right"></i></a></div>
+							<a id="customPrevBtn" ><i class="fas fa-angle-left"></i></a>
+							<a id="customNextBtn" ><i class="fas fa-angle-right"></i></a>
 						</div>
 					</div>
 				</div>

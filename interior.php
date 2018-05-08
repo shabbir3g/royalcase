@@ -80,7 +80,7 @@ get_header();
 		<section class="warehousing-slider"> 
 			<div class="container"> 
 				<div class="row"> 
-					<div class="warehousing-texts col-md-7 col-lg-7">
+					<div class="warehousing-texts col-md-5 col-lg-5">
 						<div class="text-ware"> 
 							<?php $left_text_fac = get_field('left_text_fac');
 								if($left_text_fac): 
@@ -98,19 +98,20 @@ get_header();
 							<?php endif; ?>
 						</div>
 					</div>
-					<div class="warehousing-sliderss col-md-5 col-lg-5">
+					<div class="warehousing-sliderss col-md-7 col-lg-7">
 						
 							<div class="owl-carousel">
-								<iframe width="100%" height="315" src="https://www.youtube.com/embed/kh9-UBn3w54" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-							
-						<!--	<?php $factory_sliders = get_field('factory_sliders'); 
+								
+								
+								
+								<?php $factory_sliders_copy = get_field('factory_sliders_copy'); 
 
-								if($factory_sliders): 
+								if($factory_sliders_copy): 
 
-								foreach($factory_sliders as $slids){ ?>
+								foreach($factory_sliders_copy as $slids){ ?>
+									<?php echo $slids['videos']; ?>
 									
-									
-									 <div><a href="#"><img src="<?php echo $slids['url']; ?>" alt="<?php echo $slids['title']; ?>" /></a></div>
+								
 									
 									<?php
 								}
@@ -118,8 +119,9 @@ get_header();
 								endif;
 								
 								?>
-							
-							  <div><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/images/carousel-image.png" alt="" /></a></div> -->
+								
+								
+					
 							 
 							</div>
 						
