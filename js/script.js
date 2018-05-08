@@ -29,9 +29,8 @@
 			  
 			  $('.warehousing-sliderss .owl-carousel').owlCarousel({
 						loop:true,
-						autoplay:true,
+						autoplay:false,
 						video:true,
-						autoplayHoverPause:true,
 						margin:50,
 						nav:false,
 						responsiveClass:true,

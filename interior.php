@@ -74,7 +74,7 @@ get_header();
 		</section>
 		<section class="breadcrmb-section"> 
 			<div class="container"> 
-				
+				<a href="<?php echo home_url(); ?>">HOME</a> >> <a href="#">Interior</a>
 			</div>
 		</section>
 		<section class="warehousing-slider"> 
