@@ -1,15 +1,38 @@
 /*
 Theme Name: royalcase
-Theme URI: http://shabbir.me/
-Author: Mostafiz Shabbir
-Author URI: http://faceook.com/shabbir3g
-Description: This is wordpress theme created by mostafiz shabbir
+Theme URI: http://royalcase.com/
+Author: Aharris
+Author URI: http://royalcase.com
+Description: This is wordpress theme created by Aharris
 Version: 1.0.0
-License: GNU General Public License v2 or later
-License URI: LICENSE
 Text Domain: royalcase
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 */
+@font-face {
+    font-family: 'Anton';
+   src: url('webfonts/Anton-Regular.ttf'); 
+}
+@font-face {
+    font-family: 'OpenSans';
+   src: url('webfonts/OpenSans-Bold.ttf'); 
+	    src: url('webfonts/OpenSans-BoldItalic.ttf'); 
+  src: url('webfonts/OpenSans-ExtraBold.ttf'); 
+	  src: url('webfonts/OpenSans-ExtraBoldItalic.ttf'); 
+	  src: url('webfonts/OpenSans-Italic.ttf'); 
+	  src: url('webfonts/OpenSans-Light.ttf'); 
+	  src: url('webfonts/OpenSans-LightItalic.ttf'); 
+	  src: url('webfonts/OpenSans-Regular.ttf'); 
+	  src: url('webfonts/OpenSans-SemiBold.ttf'); 
+}
+
+@font-face {
+    font-family: 'Oswald';
+   src: url('webfonts/Oswald-Medium.ttf'); 
+	  src: url('webfonts/Oswald-Regular.ttf'); 
+	  src: url('webfonts/Oswald-Light.ttf'); 
+}
+
+
 @font-face{
 	font-family:"MyriadProit";
 	src:url(webfonts/MyriadProBoldCondIt.otf);
@@ -32,12 +55,36 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 	src:url(webfonts/MyriadProBoldIt.otf);
 	src:url(webfonts/MyriadProSemibold.otf);
 }
-h2{
+body {
 	font-family:"MyriadProBold";
+		letter-spacing: 0px;
+}
+
+/*
+p {
+	font-family:"OpenSans";
+}
+h2{
+	font-family:"Anton";
+		letter-spacing: 1px;
+}
+
+.li {
+	font-family:"OpenSans";
+}
+*/
+h3{
+	font-family:"MyriadProBold";
+		letter-spacing: 0px;
+		font-size: 22px;
+		font-weight: bold;
+	text-transform:uppercase;
 }
 .phone-number h2{
+			font-family:"Anton";
+	letter-spacing: 1px;
 	font-size: 23px;
-	color: #fff;
+	color: #cecece;
 	margin-bottom: 0;
 }
 .phone-number h6{
@@ -50,7 +97,8 @@ h2{
 }
 .banner-text h1{
 	font-size: 40px;
-	font-family:"MyriadProBold";
+font-family:"Anton"; 
+	letter-spacing: 1px;
 }
 .banner-text h1 span{
 	display: block;
@@ -61,8 +109,9 @@ h2{
 }
 .banner-text p{
 	color: #fff;
-	font-family:"MyriadProBold";
+	font-family:"Anton";
 	font-size: 20px;
+		letter-spacing: 1px;
 }
 .banner-cta a{
 	background: linear-gradient(#1fc11f, #038401);
@@ -82,6 +131,7 @@ h2{
 .breadcrmb-section{
 	background: #404143;
 	color: #fff;
+	font-size:9pt;
 }
 .breadcrmb-section a{
 	color: #fff;
@@ -125,26 +175,38 @@ h2{
 }
 .warehousing-text {
 	text-align: center;
+
 }
+
 .warehousing-text .text-ware{
 	margin-top: 70px;
+		
 }
 .warehousing-text .text-ware h2{
-	font-weight: bold;
+font-family:"Anton"; 
+	letter-spacing: 0px;
 }
+
 .partner-royal{
 	width: 80%;
-	margin: 50px auto;
+	margin: 30px auto;
 }
 .partner-royal h2{
-	font-weight: bold;
-	margin: 20px 0;
+	font-family:"Anton"; 
+	letter-spacing: 0px;
+	margin: 30px 0;
+}
+.partner-royal h3{
+color:#393c43;
+	font-size: 25px;
+
 }
 .check-list {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	text-align: left;
+		margin: 0 0 0 18px;
 }
 
 .check-list li::before {
@@ -168,14 +230,36 @@ h2{
 	text-decoration: none;
 }
 .check-total-list h3{
+	color:#393c43;	
 	font-weight: bold;
 }
+.manufacture-customer h2{
+font-family:"Anton"; 
+	letter-spacing: 0px;	
+}
 .manufacture-customer{
-	background: #e6e7e8;
+/*	background: #e6e7e8; */
+		background: url('/wp-content/uploads/2018/05/softsewnback.jpg');
+background-repeat: no-repeat;
+    background-size: 100% 100%;
 	padding: 50px 0;
 	
 }
+.manufacture-customer h3{
+	color:#393c43;	
+	font-size: 25px;
+}
 .manufacture-customer img{
+	width: 100%;
+}
+.manufacture-customers h2{
+font-family:"Anton"; 
+	letter-spacing: 0px;	
+}
+.manufacture-customers {
+	padding: 50px 0;
+}
+.manufacture-customers img{
 	width: 100%;
 }
 .manufacture-middle{
@@ -200,12 +284,6 @@ h2{
 .learn-get a:hover{
 	opacity: .7;
 }
-.manufacture-customers {
-	padding: 50px 0;
-}
-.manufacture-customers img{
-	width: 100%;
-}
 .check-total-list h3, .check-total-list p{
 	text-align: left;
 }
@@ -216,6 +294,11 @@ h2{
 .card-title {
 	margin-bottom: 0;
 }
+.card-title h3{
+	color:#393c43;	
+	font-size: 25px;
+	text-transform:capitalize;
+}
 .card-body {
 	padding: 1rem 0;
 	flex: 1 1 auto;
@@ -223,6 +306,14 @@ h2{
 .manufacture-services{
 	padding: 50px 0;
 	background: #e6e7e8;
+}
+.manufacture-services h3{
+	color:#393c43;	
+	font-size: 25px;
+}
+.manufacture-services h2{
+font-family:"Anton"; 
+	letter-spacing: 0px;	
 }
 .card-img-top img{
 	height: 250px;
@@ -235,9 +326,9 @@ h2{
 	position: relative;
 }
 .manufacture-sliders h2{
-	font-weight: bold;
-	padding: 20px 0;
-	
+	padding: 0 0 40px 0;
+	font-family:"Anton"; 
+	letter-spacing: 0px;	
 }
 
 
@@ -297,8 +388,14 @@ h2{
 	width: 80%;
 	margin: 50px auto;
 }
+
 .customer-review h2{
-	font-weight: bold;
+	font-family:"Anton"; 
+	letter-spacing: 0px;	
+	padding: 20px 0;
+}
+.customer-review p{
+	font-size:22px;
 }
 .customer-review{
 	width: 70%;
@@ -308,6 +405,8 @@ h2{
 .footer-section{
 	background: #010102;
 	padding: 50px 0;
+		text-align: center;
+
 }
 .footer-one {
 	width: 70%;
@@ -318,7 +417,7 @@ h2{
 	font-size: 15px;
 }
 .footer-one ul {
-	line-height: ;
+	/* line-height: ; */
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -396,10 +495,11 @@ h2{
 }
 .header-top-fixed.shrink:before {
 	height: 100%;
+
 }
 .header-top-fixed.shrink {
-    height: 80px;
-	background: #3BA2FB;
+    height: 100px;
+	background: #000;
 }
 
 .navbar-brand img{
@@ -420,6 +520,7 @@ h2{
 	font-size: 35px;
 }
 .warehousing-sliderss{
+		
 	overflow: hidden;
 }
 .navbar .nav-link {
@@ -432,7 +533,7 @@ h2{
 }
 
 .navbar::before {
-	background-color: #3BA2FB;
+	background-color: #000;
 }
 .choose_slider_items img {
 	height: 100%;
@@ -466,6 +567,24 @@ h2{
 	color: #f5f8a9;
 	text-decoration: underline;
 	
+}
+.right-side-menu ul li{
+	position: relative;
+}
+.right-side-menu ul li ul.sub-menu {
+	list-style: none;
+	background: #000;
+	margin: 0;
+	padding: 0;
+	width: 170px;
+	text-align: left;
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.right-side-menu ul li:hover > ul.sub-menu{
+	display: block;
 }
 .mc4wp-form-fields input[type=submit]{
 	display: none;

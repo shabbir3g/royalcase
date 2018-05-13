@@ -15,15 +15,19 @@
 get_header();
 ?>
 
-	<section class="section section-top">
 
-			<!-- Parallax -->
+		<?php $banner_image = get_field('banner_image');
+		if($banner_image): ?>
+		<?php echo $banner_image; ?>
+		
+		<?php endif; ?>
+
+	<!-- <section class="section section-top">
 			<div class="bg-parallaxs">
 				<div class="bg-parallaxs-img">
 					
 					<?php $banner_image = get_field('banner_image');
 					if($banner_image): ?>
-					<!-- Cover -->
 					<div class="bg-cover" style="background-image: url(<?php echo $banner_image['url'] ?>);"></div>
 					
 					<?php endif; ?>
@@ -43,7 +47,6 @@ get_header();
 
 					</div>
 					<div class="banner-text col-md-5 col-lg-5">
-						<!-- Heading -->
 						<h1 class="text-white mb-4">
 						<?php $banner_header_text = get_field('banner_header_text');
 						if($banner_header_text): 
@@ -54,7 +57,6 @@ get_header();
 						?>
 						
 						</h1>
-						<!-- Subheading -->
 						<p class=" mb-5">
 							<?php $banner_text_small = get_field('banner_text_small');
 						if($banner_text_small): 
@@ -63,15 +65,14 @@ get_header();
 						
 						endif;
 						?>
-							
 						</p>
-
-
 					</div>
-				</div> <!-- / .row -->
-			</div> <!-- / .container -->
-
-		</section>
+				</div>
+			</div> 
+		</section>  -->
+		
+		
+		
 		<section class="breadcrmb-section"> 
 			<div class="container"> 
 				<a href="<?php echo home_url(); ?>">HOME</a> >> <a href="#">Interior</a>
